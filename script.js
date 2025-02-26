@@ -12,7 +12,7 @@ gsap.to("#loader", {
 
   
 }, code());
-
+ 
 
 function code(){
   
