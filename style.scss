@@ -1,0 +1,469 @@
+// FONTS FAMILIES
+@font-face {
+  font-family: "A";
+  src: url("./Fonts/AreaNormal-Semibold.ttf");
+}
+@font-face {
+  font-family: "B";
+  src: url("./Fonts/CircularXXWeb-Medium.ttf");
+}
+@font-face {
+  font-family: "C";
+  src: url("./Fonts/CircularXXWeb-Regular.ttf");
+}
+@font-face {
+  font-family: "D";
+  src: url("./Fonts/DrukWide-Bold-Web.ttf");
+}
+@font-face {
+  font-family: "E";
+  src: url("./Fonts/NHaasGroteskDSPro-65Md.ttf");
+}
+@font-face {
+  font-family: "F";
+  src: url("./Fonts/NHaasGroteskDSPro-75Bd.ttf");
+}
+
+// BOILERPLATES TO RESET DEFAULT STYLES
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+}
+
+// WARPPER
+main {
+  width: 100%;
+  position: relative;
+  font-family: "A";
+  overflow-x: hidden;
+}
+
+#loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 999;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-family: "D", sans-serif;
+    font-size: 10vw;
+    color: transparent;
+    -webkit-text-stroke: 3px rgb(54, 54, 54);
+
+    background-clip: text;
+    background-position: bottom;
+    background-size: 100% 300%;
+  }
+}
+
+// NAVBAR CODE
+nav {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2vw;
+  position: absolute;
+  top: 0px;
+  background-color: #212121;
+  z-index: 9999;
+
+  .menu-icon {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+// HERO SECTION
+#sec1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+}
+
+// TEXT CONTAINER
+#text-container {
+  position: relative;
+
+  .text-block {
+    font-family: "D";
+    background-color: #212121;
+    text-align: center;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 200;
+
+    h1 {
+      font-size: 10vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      z-index: 100;
+
+      span {
+        width: 40px;
+        height: 2px;
+        border: 1px solid white;
+      }
+    }
+  }
+
+  #txt4wide1,
+  #txt4wide2 {
+    display: none;
+  }
+
+  .image-containers1 {
+    height: 30%;
+    width: 40%;
+    border: 1px solid gray;
+    position: absolute;
+
+    // change the position to change img postion
+    top: 0px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    div {
+      position: relative;
+      top: -20%;
+      right: -50%;
+
+      h1 {
+        font-size: 5vw;
+        color: white;
+        font-family: "D";
+        white-space: nowrap;
+      }
+      p {
+        font-size: 2vw;
+        color: white;
+        white-space: nowrap;
+        font-family: "D";
+      }
+    }
+  }
+
+  .image-containers2 {
+    height: 30%;
+    width: 40%;
+    position: absolute;
+    border: 1px solid gray;
+
+    // change the position to change img postion
+    top: 80%;
+    left: -5%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    div {
+      position: relative;
+      top: -20%;
+      right: -50%;
+
+      h1 {
+        font-size: 5vw;
+        color: white;
+        font-family: "D";
+        white-space: nowrap;
+      }
+      p {
+        font-size: 2vw;
+        color: white;
+        white-space: nowrap;
+        font-family: "D";
+      }
+    }
+  }
+
+  .image-containers3 {
+    height: 30%;
+    width: 40%;
+    border: 1px solid gray;
+    position: absolute;
+
+    // change the position to change img postion
+    top: 20%;
+    right: -5%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    div {
+      position: relative;
+      top: -20%;
+      right: -50%;
+
+      h1 {
+        font-size: 5vw;
+        color: white;
+        font-family: "D";
+        white-space: nowrap;
+      }
+      p {
+        font-size: 2vw;
+        color: white;
+        white-space: nowrap;
+        font-family: "D";
+      }
+    }
+  }
+
+  .image-containers4 {
+    height: 30%;
+    width: 40%;
+    border: 1px solid gray;
+    position: absolute;
+
+    // change the position to change img postion
+    top: 80%;
+    right: -15%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    div {
+      position: relative;
+      top: -20%;
+      right: -50%;
+
+      h1 {
+        font-size: 5vw;
+        color: white;
+        font-family: "D";
+        white-space: nowrap;
+      }
+      p {
+        font-size: 2vw;
+        color: white;
+        white-space: nowrap;
+        font-family: "D";
+      }
+    }
+  }
+}
+
+.info1 {
+  display: none;
+}
+
+.info2 {
+  display: none;
+}
+
+.info3 {
+  display: none;
+}
+
+.info4 {
+  display: none;
+}
+
+// // MEDIA QUERIES (RESPONSIVE DESIGN)
+
+// /* Phir badi screens ke liye styles badlenge */
+@media (min-width: 768px) {
+  nav {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2vw;
+    position: absolute;
+    top: 0px;
+    background-color: #212121;
+    z-index: 100;
+
+    .menu-icon {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      gap: 20px;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #text-container {
+    .text-block {
+      font-family: "D";
+      // background-color: rgba(252, 51, 51, 0.034);
+      text-align: center;
+      height: 7vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 300;
+
+      h1 {
+        font-size: 7vw;
+        z-index: 300;
+      }
+    }
+    #txt4wide1,
+    #txt4wide2 {
+      display: block;
+    }
+
+    #txt4smallscreen1,
+    #txt4smallscreen2,
+    #txt4smallscreen3,
+    #txt4smallscreen4 {
+      display: none;
+    }
+
+    .image-containers1 {
+      height: 40%;
+      width: 30%;
+      border: 1px solid gray;
+      position: absolute;
+      top: 70%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      div {
+        position: relative;
+        top: -20%;
+        right: -70%;
+
+        h1 {
+          font-size: 5vh;
+          color: white;
+        }
+        p {
+          font-size: 2vh;
+        }
+      }
+    }
+
+    .image-containers2 {
+      height: 40%;
+      width: 30%;
+      border: 1px solid gray;
+      position: absolute;
+      top: 0%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      div {
+        position: relative;
+        top: -20%;
+        right: -70%;
+
+        h1 {
+          font-size: 5vh;
+          color: white;
+        }
+        p {
+          font-size: 2vh;
+        }
+      }
+    }
+
+    .image-containers3 {
+      height: 40%;
+      width: 30%;
+      border: 1px solid gray;
+      position: absolute;
+      top: -10%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      div {
+        position: relative;
+        top: -20%;
+        right: -70%;
+
+        h1 {
+          font-size: 5vh;
+          color: white;
+        }
+        p {
+          font-size: 2vh;
+        }
+      }
+    }
+
+    .image-containers4 {
+      height: 40%;
+      width: 30%;
+      border: 1px solid gray;
+      position: absolute;
+      top: 74%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid gray;
+      }
+
+      div {
+        position: relative;
+        top: -20%;
+        right: -70%;
+
+        h1 {
+          font-size: 5vh;
+          color: white;
+        }
+        p {
+          font-size: 2vh;
+        }
+      }
+    }
+  }
+}
