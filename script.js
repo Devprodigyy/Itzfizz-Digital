@@ -38,7 +38,7 @@ imgs.forEach(function (img) {
 img.addEventListener("mouseover", function (e) {
   // console.log("Mouse over image: " + e.target.src);
   e.target.src =
-    "./Assets/img1.png"; // Change the image source
+    "./Assets/img1.webp"; // Change the image source
   gsap.to(img, {
     display: "block", // Show the image
     opacity: 1, // Smoothly fade out the image instead of hiding it
@@ -78,7 +78,7 @@ img2.forEach(function (img) {
 img.addEventListener("mouseover", function (e) {
   // console.log("Mouse over image: " + e.target.src);
   e.target.src =
-    "./Assets/img2.png"; // Change the image source
+    "./Assets/img2.webp"; // Change the image source
   gsap.to(img, {
     display: "block", // Show the image
     opacity: 1, // Smoothly fade out the image instead of hiding it
@@ -118,7 +118,7 @@ img3.forEach(function (img) {
 img.addEventListener("mouseover", function (e) {
   // console.log("Mouse over image: " + e.target.src);
   e.target.src =
-    "./Assets/img3.png"; // Change the image source
+    "./Assets/img3.webp"; // Change the image source
   gsap.to(img, {
     display: "block", // Show the image
     opacity: 1, // Smoothly fade out the image instead of hiding it
@@ -157,7 +157,7 @@ img.addEventListener("mouseleave", function (e) {
 img4.forEach(function (img) {
 img.addEventListener("mouseover", function (e) {
   // console.log("Mouse over image: " + e.target.src);
-  e.target.src ="./Assets/img4.png"; // Change the image source
+  e.target.src ="./Assets/img4.webp"; // Change the image source
   gsap.to(img, {
     display: "block", // Show the image
     opacity: 1, // Smoothly fade out the image instead of hiding it
