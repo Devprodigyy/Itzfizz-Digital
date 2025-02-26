@@ -38,7 +38,7 @@ imgs.forEach(function (img) {
 img.addEventListener("mouseover", function (e) {
   // console.log("Mouse over image: " + e.target.src);
   e.target.src =
-    "https://2022-pha5e-website-prod.s3.eu-west-3.amazonaws.com/assets/map-interactive.png"; // Change the image source
+    "./Assets/img1.png"; // Change the image source
   gsap.to(img, {
     display: "block", // Show the image
     opacity: 1, // Smoothly fade out the image instead of hiding it
@@ -78,7 +78,7 @@ img2.forEach(function (img) {
 img.addEventListener("mouseover", function (e) {
   // console.log("Mouse over image: " + e.target.src);
   e.target.src =
-    "https://2022-pha5e-website-prod.s3.eu-west-3.amazonaws.com/assets/bigger-science_thumbnail-2.png"; // Change the image source
+    "./Assets/img2.png"; // Change the image source
   gsap.to(img, {
     display: "block", // Show the image
     opacity: 1, // Smoothly fade out the image instead of hiding it
@@ -118,7 +118,7 @@ img3.forEach(function (img) {
 img.addEventListener("mouseover", function (e) {
   // console.log("Mouse over image: " + e.target.src);
   e.target.src =
-    "https://2022-pha5e-website-prod.s3.eu-west-3.amazonaws.com/assets/Capture%20da%C3%8CeI%C3%8Ccran%202024-01-04%20aI%C3%8C%2016.41.06-2.png"; // Change the image source
+    "./Assets/img3.png"; // Change the image source
   gsap.to(img, {
     display: "block", // Show the image
     opacity: 1, // Smoothly fade out the image instead of hiding it
@@ -157,8 +157,7 @@ img.addEventListener("mouseleave", function (e) {
 img4.forEach(function (img) {
 img.addEventListener("mouseover", function (e) {
   // console.log("Mouse over image: " + e.target.src);
-  e.target.src =
-    "https://2022-pha5e-website-prod.s3.eu-west-3.amazonaws.com/assets/Capture-d%C3%A2e%C3%8Ccran-2023-04-03-a%C3%8C-10.59.43_2-2.jpg"; // Change the image source
+  e.target.src ="./Assets/img4.png"; // Change the image source
   gsap.to(img, {
     display: "block", // Show the image
     opacity: 1, // Smoothly fade out the image instead of hiding it
